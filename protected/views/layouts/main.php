@@ -1,55 +1,143 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="language" content="en" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<!-- <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /> -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-	<!-- blueprint CSS framework -->
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
-	<!--[if lt IE 8]>
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
-	<![endif]-->
+		<title>Cocomonio - A Themeforest Business and Portfolio HTML Template</title>
 
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
+		<!-- ########## CSS Files ########## -->
+		<!-- Screen CSS -->
+		<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style.css" type="text/css" media="screen" />
 
-	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
-</head>
+		<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style_orange/style_orange.css" type="text/css" media="screen" />
 
-<body>
+		<!-- Framework CSS -->
+		<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/960.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/reset.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/text.css" type="text/css" media="screen" />
 
-<div class="container" id="page">
+		<!-- PrettyPhoto CSS -->
+		<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
 
-	<div id="header">
-		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
-	</div><!-- header -->
+		<!-- ########## end css ########## -->
 
-	<div id="mainmenu">
-		<?php $this->widget('zii.widgets.CMenu',array(
-			'items'=>array(
-				array('label'=>'Home', 'url'=>array('/site/index')),
-				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-				array('label'=>'Contact', 'url'=>array('/site/contact')),
-				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
-			),
-		)); ?>
-	</div><!-- mainmenu -->
+		<!--[if IE 7]>
+		<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie7.css" type="text/css" />
+		<![endif]-->
 
-	<?php $this->widget('zii.widgets.CBreadcrumbs', array(
-		'links'=>$this->breadcrumbs,
-	)); ?><!-- breadcrumbs -->
+		<!--[if lt IE 8]>
+		<script src="<?php echo Yii::app()->request->baseUrl; ?>/IE8.js" type="text/javascript"></script>
+		<![endif]-->
 
-	<?php echo $content; ?>
+		<!-- Jquery -->
+		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.min.js" ></script>
 
-	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
-		All Rights Reserved.<br/>
-		<?php echo Yii::powered(); ?>
-	</div><!-- footer -->
+		<!-- Cufon Font Replacement -->
+		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/cufon.js" ></script>
+		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/Alte_Haas_Grotesk_400-Alte_Haas_Grotesk_700.font.js" ></script>
 
-</div><!-- page -->
+		<!-- Superfish Menu -->
+		<!-- http://users.tpg.com.au/j_birch/plugins/superfish/ -->
+		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/superfish.js" ></script>
 
-</body>
+		<!-- Nivo Slider -->
+		<!-- http://nivo.dev7studios.com/ -->
+		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+		<!-- Coin Slider -->
+		<!-- http://workshop.rs/projects/coin-slider/ -->
+		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/coin-slider.min.js" ></script>
+
+		<!-- Portfolio Filter Plugin -->
+		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/filterable.js" type="text/javascript" charset="utf-8"></script>
+
+		<!-- PrettyPhoto Lightbox -->
+		<!-- http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/ -->
+		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+
+		<!-- To customise any of the above, please use this file -->
+		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/inc.js" ></script>
+
+	</head>
+
+	<body id="top">
+		<!-- Start Head Container -->
+		<div class="container_12 head">
+
+			<!-- Logo -->
+			<h1 class="grid_4 logo"><a href="index.html" class='ie6fix'>Cocomonio</a></h1>
+
+			<!-- Start Navigation -->
+			<div class="grid_7">
+
+			<?php $this->widget('MainMenu'); ?>
+
+			</div><!-- Navigation END -->
+
+			<!-- Start Social Buttons -->
+			<div class="grid_1">
+
+				<ul class="social_bookmarks">
+					<li class="facebook"><a href="#" class="" title="Facebook">Facebook</a></li>
+					<li class="twitter"><a href="#" class="" title="Twitter">Twitter</a></li>
+					<li class="rss"><a href="#" class="" title="RSS">RSS</a></li>
+				</ul>
+
+			</div><!-- Social Buttons END -->
+
+		</div><!-- Head Container END -->
+
+		<div class="clear"></div><!-- CLEAR -->
+
+		<!-- Start Header Break Line -->
+		<div class="container_12 head_break">
+			<hr class="grid_12"></hr>
+		</div><!-- Header Break Line END -->
+
+		<div class="clear"></div><!-- CLEAR -->
+
+		<!-- Start Content -->
+		<div class="container_12 content">
+			<?php echo $content ?>
+		</div><!-- Content END -->
+
+		<div class="clear"></div>
+
+		<div class="clear"></div>
+
+		<?php $this->widget('PageFooter'); ?>
+
+		<!-- Start Footer Bottom -->
+		<div id="fullwidth_footer_bottom">
+
+			<!-- Start Footer Bottom Container -->
+			<div class="container_12">
+
+				<!-- Start Copyright -->
+				<div class="grid_8 copyright">
+
+					<p class="rights">Copyright 2010 by <a href="<?php echo Yii::app()->request->baseUrl; ?>">FondForum</a>. All rights reserved.</p>
+
+				</div><!-- Copyright END -->
+
+				<!-- Start Footer Text -->
+				<div class="grid_4 footer_text">
+
+					Buy this Template at Themeforest.net
+
+				</div><!-- Footer Text END -->
+
+
+			</div><!-- Footer Bottom Container END -->
+
+			<!-- Clearfix -->
+			<div class="clear"></div>
+
+		</div><!-- Footer Bottom END -->
+
+		<!-- IE fix -->
+		<script type="text/javascript"> Cufon.now(); </script>
+
+	</body>
 </html>

@@ -1,0 +1,535 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /> -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<title>Cocomonio - A Themeforest Business and Portfolio HTML Template</title>
+	
+	<!-- ########## CSS Files ########## -->
+	<!-- Screen CSS -->
+	<link rel="stylesheet" href="css/style.css" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/css/style.css" type="text/css" media="screen" />
+	
+	<link rel="stylesheet" href="css/style_orange/style_orange.css" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/css/style_orange/style_orange.css" type="text/css" media="screen" />
+	
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="css/960.css" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/css/960.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/reset.css" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/css/reset.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/text.css" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/css/text.css" type="text/css" media="screen" />
+	
+	<!-- PrettyPhoto CSS -->
+	<link rel="stylesheet" href="css/prettyPhoto.css" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+	
+	<!-- ########## end css ########## -->	
+	
+	<!--[if IE 7]>
+	<link rel="stylesheet" href="css/ie7.css" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/css/ie7.css" type="text/css" />
+ 	<![endif]-->
+ 	
+ 	<!--[if lt IE 8]>
+	<script src="../../../../ie7-js.googlecode.com/svn/version/2.0(beta3)/IE8.js" tppabs="http://ie7-js.googlecode.com/svn/version/2.0(beta3)/IE8.js" type="text/javascript"></script>
+	<![endif]-->
+	
+	<!-- Jquery -->
+	<script type="text/javascript" src="../../../../ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" tppabs="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	
+	<!-- Cufon Font Replacement -->
+	<script type="text/javascript" src="js/cufon.js" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/js/cufon.js"></script>
+	<script type="text/javascript" src="js/Alte_Haas_Grotesk_400-Alte_Haas_Grotesk_700.font.js" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/js/Alte_Haas_Grotesk_400-Alte_Haas_Grotesk_700.font.js"></script>
+
+	<!-- Superfish Menu -->
+	<!-- http://users.tpg.com.au/j_birch/plugins/superfish/ -->
+	<script type="text/javascript" src="js/superfish.js" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/js/superfish.js"></script>
+	
+	<!-- Nivo Slider -->
+	<!-- http://nivo.dev7studios.com/ -->
+	<script src="js/jquery.nivo.slider.pack.js" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/js/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+	
+	<!-- Coin Slider -->
+	<!-- http://workshop.rs/projects/coin-slider/ -->
+	<script type="text/javascript" src="js/coin-slider.min.js" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/js/coin-slider.min.js"></script>
+	
+	<!-- Portfolio Filter Plugin -->
+	<script src="js/filterable.js" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/js/filterable.js" type="text/javascript" charset="utf-8"></script>	
+	
+	<!-- PrettyPhoto Lightbox -->
+	<!-- http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/ -->
+	<script src="js/jquery.prettyPhoto.js" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+	
+	<!-- To customise any of the above, please use this file -->
+	<script type="text/javascript" src="js/inc.js" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/js/inc.js"></script>
+	
+	<script type="text/javascript">
+        $(function() {
+            var offset = $("#box").offset();
+            var topPadding = 80;
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > offset.top) {
+                    $("#box").stop().animate({
+                        marginTop: $(window).scrollTop() - offset.top + topPadding
+                    });
+                } else {
+                    $("#box").stop().animate({
+                        marginTop: 0
+                    });
+                };
+            });
+        });
+    </script>	
+
+</head>
+
+<body id="top">
+
+<!-- this is the start of the floating box -->
+			<div id="box">
+				<div class="highlight_box3">
+                	<h4>Styleswitcher</h4>
+                	<p>Index Page:<br /><br />
+                		<a href="index.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/index.html">Small Slider</a><br />
+                        <a href="index_coin_slider.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/index_coin_slider.html">Fullwidth Slider</a><br />
+                        <a href="index_video.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/index_video.html">Video Index</a><br />
+                        <a href="index_static.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/index_static.html">Static Index</a>
+                   </p>
+                	<p>Color Style:<br /><br />
+                		<a href="javascript:if(confirm('http://www.wickedshot.de/demos/cocomonio/blue/portfolio.html  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://www.wickedshot.de/demos/cocomonio/blue/portfolio.html'" tppabs="http://www.wickedshot.de/demos/cocomonio/blue/portfolio.html" class="blue">Blue</a><br />
+						<a href="javascript:if(confirm('http://www.wickedshot.de/demos/cocomonio/green/portfolio.html  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://www.wickedshot.de/demos/cocomonio/green/portfolio.html'" tppabs="http://www.wickedshot.de/demos/cocomonio/green/portfolio.html" class="green">Green</a><br />
+           				<a href="portfolio.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/portfolio.html" class="orange">Orange</a><br />
+                        <a href="javascript:if(confirm('http://www.wickedshot.de/demos/cocomonio/yellow/portfolio.html  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://www.wickedshot.de/demos/cocomonio/yellow/portfolio.html'" tppabs="http://www.wickedshot.de/demos/cocomonio/yellow/portfolio.html" class="yellow">Yellow</a><br />
+                        <a href="javascript:if(confirm('http://www.wickedshot.de/demos/cocomonio/red/portfolio.html  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://www.wickedshot.de/demos/cocomonio/red/portfolio.html'" tppabs="http://www.wickedshot.de/demos/cocomonio/red/portfolio.html" class="red">Red</a><br />
+                        <a href="javascript:if(confirm('http://www.wickedshot.de/demos/cocomonio/brown/portfolio.html  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://www.wickedshot.de/demos/cocomonio/brown/portfolio.html'" tppabs="http://www.wickedshot.de/demos/cocomonio/brown/portfolio.html" class="brown">Brown</a><br />
+                        <a href="javascript:if(confirm('http://www.wickedshot.de/demos/cocomonio/cyan/portfolio.html  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://www.wickedshot.de/demos/cocomonio/cyan/portfolio.html'" tppabs="http://www.wickedshot.de/demos/cocomonio/cyan/portfolio.html" class="cyan">Cyan</a><br />
+                        <a href="javascript:if(confirm('http://www.wickedshot.de/demos/cocomonio/purple/portfolio.html  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://www.wickedshot.de/demos/cocomonio/purple/portfolio.html'" tppabs="http://www.wickedshot.de/demos/cocomonio/purple/portfolio.html" class="purple">Purple</a><br />
+                        <a href="javascript:if(confirm('http://www.wickedshot.de/demos/cocomonio/pink/portfolio.html  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://www.wickedshot.de/demos/cocomonio/pink/portfolio.html'" tppabs="http://www.wickedshot.de/demos/cocomonio/pink/portfolio.html" class="pink">Pink</a><br />
+                        <a href="javascript:if(confirm('http://www.wickedshot.de/demos/cocomonio/oliv/portfolio.html  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://www.wickedshot.de/demos/cocomonio/oliv/portfolio.html'" tppabs="http://www.wickedshot.de/demos/cocomonio/oliv/portfolio.html" class="oliv">Oliv</a>
+                   	</p>
+				</div>
+			</div>
+<!-- Floating box stops here -->
+	
+		<!-- Start Head Container -->
+		<div class="container_12 head">
+		
+			<!-- Logo -->
+			<h1 class="grid_4 logo"><a href="index.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/index.html" class='ie6fix'>Cocomonio</a></h1>
+			
+			<!-- Start Navigation -->
+			<div class="grid_7">
+			
+				<ul class="sf-menu">
+					<li><a href="index.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/index.html">Home</a>
+						<ul>
+							<li><a href="index.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/index.html">Nivo Slider Index</a></li>
+							<li><a href="index_coin_slider.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/index_coin_slider.html">Coin Slider Index</a></li>
+							<li><a href="index_video.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/index_video.html">Video Index</a></li>
+							<li><a href="index_static.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/index_static.html">Static Index</a></li>
+						</ul>
+					</li>
+					<li><a href="about.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/about.html">About</a>
+						<ul>
+							<li><a href="about.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/about.html">About Us</a></li>
+							<li><a href="text_styles.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/text_styles.html">Text Styles</a></li>
+							<li><a href="page_styles.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/page_styles.html">Page Styles</a></li>
+							<li><a href="#">Lorem Ipsum</a>
+								<ul>
+									<li><a href="#">Dolor sit</a></li>
+									<li><a href="#">Tempor erat</a></li>
+									<li><a href="#">Dolores diam</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="services.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/services.html">Service</a>
+						<ul>
+							<li><a href="services.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/services.html">Service Page</a></li>
+							<li><a href="services_detail.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/services_detail.html">Service Detail</a></li>
+							<li><a href="testimonials.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/testimonials.html">Testimonials</a></li>
+						</ul>
+					</li>
+					<li class="current"><a href="portfolio.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/portfolio.html">Portfolio</a>
+						<ul>
+							<li><a href="portfolio_detail.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/portfolio_detail.html">Portfolio Item</a></li>
+						</ul>
+					</li>
+					<li><a href="blog.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/blog.html">Blog</a>
+						<ul>
+							<li><a href="blog_single.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/blog_single.html">Blog Post</a></li>
+						</ul>
+					</li>
+					<li><a href="contact.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/contact.html">Contact</a></li>
+				</ul>
+			
+			</div><!-- Navigation END -->
+			
+			<!-- Start Social Buttons -->
+			<div class="grid_1">
+               
+				<ul class="social_bookmarks">
+					<li class="facebook"><a href="#" class="" title="Facebook">Facebook</a></li>
+					<li class="twitter"><a href="#" class="" title="Twitter">Twitter</a></li>
+					<li class="rss"><a href="#" class="" title="RSS">RSS</a></li>
+				</ul>
+
+			</div><!-- Social Buttons END -->
+
+		</div><!-- Head Container END -->
+		
+		<div class="clear"></div><!-- CLEAR -->
+		
+		<!-- Start Header Break Line -->
+		<div class="container_12 head_break">
+			<hr class="grid_12"></hr>
+		</div><!-- Header Break Line END -->
+		
+		<div class="clear"></div><!-- CLEAR -->
+	
+		<!-- Start Main Content -->
+		<div class="container_12 content">
+			
+			<!-- Start Content -->
+			<div class="grid_12">
+		
+				<h1>Lorem Ipsum dolor sit amet, consetetur
+sadipscing elitr, sed diam eirmod.</h1>
+			
+				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor. Invidunt ut labore et dolore eos aliquyam erat, sed diam voluptua sed diam et dolores. Invidunt ut labore et dolore eos aliquyam erat, sed diam voluptua sed diam et dolores.</p>
+				
+				<!-- Breakline -->
+				<hr class="grid_12 alpha hr_margin"></hr>
+				
+			</div>
+			
+			<div class="container_12">
+					
+		<!-- Portfolio Filter Start -->
+		<ul id="portfolio-filter">
+			<li>Show:</li>
+        	<li><a href="#All" title="All">All Recent Work</a></li>
+        	<li><a href="#Wordpress" title="Wordpress">Wordpress</a></li>
+        	<li><a href="#PSD" title="PSD">PSD</a></li>
+        	<li><a href="#XHTML" title="XHTML">XHTML</a></li>
+        	<li><a href="#Video" title="Other">Video</a></li>
+        	<li><a href="#Custom" title="Custom Work">Custom Work</a></li>
+        </ul><!-- Portfolio Filter END -->
+        
+        <div class="clear"></div>
+       
+	
+	<!-- Portfolio Items List Start -->
+	<ul id="portfolio-list">
+	
+		<!-- Portfolio Item Start -->
+		<li class="Portfolio XHTML All">
+			<div class="grid_4 portfolio-item rounded">
+				<div class="image">
+					<a href="images/portfolio/big/portfolio-work1.jpg" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/images/portfolio/big/portfolio-work1.jpg" title="Webworker 2.0 Wordpress" rel="prettyPhoto[wordpress]"><img class="pthumb" src="images/portfolio/thumbs/thumb-html.jpg" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/images/portfolio/thumbs/thumb-html.jpg" alt="Portfolio Item" /></a>
+				</div>
+				<div class="text">
+					<h4><a href="portfolio_detail.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/portfolio_detail.html">Lorem Ipsum</a></h4>
+						<p>Nam egestas tincidunt sem, nec porta nibh scelerisque a. In accumsan semper tincidunt.</p>
+				</div>
+				
+				<div class="clear"></div>
+				
+				<p><a class="work_btn_one margin_right" href="portfolio_detail.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/portfolio_detail.html">View Details</a> <a class="work_btn_two" href="#">Live Preview</a></p>
+				
+				<div class="clear"></div>
+			</div>
+		</li><!-- Portfolio Item END -->
+			
+		<!-- Portfolio Item Start -->
+		<li class="Portfolio Video All">
+			<div class="grid_4 portfolio-item rounded">
+				<div class="image">
+					<a href="javascript:if(confirm('http://www.youtube.com/watch?v=bFYAwGKUmoY  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://www.youtube.com/watch?v=bFYAwGKUmoY'" tppabs="http://www.youtube.com/watch?v=bFYAwGKUmoY" title="YouTube Video" rel="prettyPhoto"><img class="pthumb" src="images/portfolio/thumbs/thumb-youtube.jpg" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/images/portfolio/thumbs/thumb-youtube.jpg" alt="YouTube Video" /></a>
+				</div>
+				<div class="text">
+					<h4><a href="portfolio_detail.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/portfolio_detail.html">Lorem Ipsum</a></h4>
+						<p>Nam egestas tincidunt sem, nec porta nibh scelerisque a. In accumsan semper tincidunt.</p>
+				</div>
+				
+				<div class="clear"></div>
+				
+				<p><a class="work_btn_one margin_right" href="portfolio_detail.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/portfolio_detail.html">View Details</a> <a class="work_btn_two" href="#">Live Preview</a></p>
+				
+				<div class="clear"></div>
+			</div>
+		</li><!-- Portfolio Item END -->
+		
+		<!-- Portfolio Item Start -->
+		<li class="Portfolio Custom All">
+			<div class="grid_4 portfolio-item rounded">
+				<div class="image">
+					<a href="images/portfolio/big/portfolio-work1.jpg" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/images/portfolio/big/portfolio-work1.jpg" title="A Nice Porfolio Shot" rel="prettyPhoto"><img class="pthumb" src="images/portfolio/thumbs/thumb-custom.jpg" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/images/portfolio/thumbs/thumb-custom.jpg" alt="Portfolio Post Item" /></a>
+				</div>
+				<div class="text">
+					<h4><a href="portfolio_detail.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/portfolio_detail.html">Lorem Ipsum</a></h4>
+						<p>Nam egestas tincidunt sem, nec porta nibh scelerisque a. In accumsan semper tincidunt.</p>
+				</div>
+				
+				<div class="clear"></div>
+				
+				<p><a class="work_btn_one margin_right" href="portfolio_detail.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/portfolio_detail.html">View Details</a> <a class="work_btn_two" href="#">Live Preview</a></p>
+				
+				<div class="clear"></div>
+			</div>
+		</li><!-- Portfolio Item END -->
+		
+		<!-- Portfolio Item Start -->
+		<li class="Portfolio Video All">
+			<div class="grid_4 portfolio-item rounded">
+				<div class="image">
+					<a href="javascript:if(confirm('http://vimeo.com/9820827  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://vimeo.com/9820827'" tppabs="http://vimeo.com/9820827" title="Vimeo" rel="prettyPhoto"><img class="pthumb" src="images/portfolio/thumbs/thumb-vimeo.jpg" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/images/portfolio/thumbs/thumb-vimeo.jpg" alt="Vimeo" /></a>
+				</div>
+				<div class="text">
+					<h4><a href="portfolio_detail.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/portfolio_detail.html">Lorem Ipsum</a></h4>
+						<p>Nam egestas tincidunt sem, nec porta nibh scelerisque a. In accumsan semper tincidunt.</p>
+				</div>
+				
+				<div class="clear"></div>
+				
+				<p><a class="work_btn_one margin_right" href="portfolio_detail.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/portfolio_detail.html">View Details</a> <a class="work_btn_two" href="#">Live Preview</a></p>
+				
+				<div class="clear"></div>
+			</div>
+		</li><!-- Portfolio Item END -->
+			
+		<!-- Portfolio Item Start -->
+		<li class="Portfolio XHTML All">
+			<div class="grid_4 portfolio-item rounded">
+				<div class="image">
+					<a href="images/portfolio/big/portfolio-work1.jpg" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/images/portfolio/big/portfolio-work1.jpg" title="Webworker 2.0 Custom Work" rel="prettyPhoto"><img class="pthumb" src="images/portfolio/thumbs/thumb-html.jpg" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/images/portfolio/thumbs/thumb-html.jpg" alt="Portfolio Item" /></a>
+				</div>
+				<div class="text">
+					<h4><a href="portfolio_detail.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/portfolio_detail.html">Lorem Ipsum</a></h4>
+						<p>Nam egestas tincidunt sem, nec porta nibh scelerisque a. In accumsan semper tincidunt.</p>
+				</div>
+				
+				<div class="clear"></div>
+				
+				<p><a class="work_btn_one margin_right" href="portfolio_detail.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/portfolio_detail.html">View Details</a> <a class="work_btn_two" href="#">Live Preview</a></p>
+				
+				<div class="clear"></div>
+			</div>
+		</li><!-- Portfolio Item END -->
+		
+		<!-- Portfolio Item Start -->
+		<li class="Portfolio Wordpress All">
+			<div class="grid_4 portfolio-item rounded">
+				<div class="image">
+					<a href="images/portfolio/big/portfolio-work1.jpg" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/images/portfolio/big/portfolio-work1.jpg" title="Webworker 2.0 Wordpress" rel="prettyPhoto"><img class="pthumb" src="images/portfolio/thumbs/thumb-wordpress.jpg" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/images/portfolio/thumbs/thumb-wordpress.jpg" alt="Portfolio Post 6" /></a>
+				</div>
+				<div class="text">
+					<h4><a href="portfolio_detail.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/portfolio_detail.html">Lorem Ipsum</a></h4>
+						<p>Nam egestas tincidunt sem, nec porta nibh scelerisque a. In accumsan semper tincidunt.</p>
+				</div>
+				
+				<div class="clear"></div>
+				
+				<p><a class="work_btn_one margin_right" href="portfolio_detail.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/portfolio_detail.html">View Details</a> <a class="work_btn_two" href="#">Live Preview</a></p>
+				
+				<div class="clear"></div>
+			</div>
+		</li><!-- Portfolio Item END -->
+		
+		<!-- Portfolio Item Start -->
+		<li class="Portfolio PSD All">
+			<div class="grid_4 portfolio-item rounded">
+				<div class="image">
+					<a href="images/portfolio/big/portfolio-work1.jpg" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/images/portfolio/big/portfolio-work1.jpg" title="Webworker 2.0 Photoshop" rel="prettyPhoto"><img class="pthumb" src="images/portfolio/thumbs/thumb-psd.jpg" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/images/portfolio/thumbs/thumb-psd.jpg" alt="Portfolio Item" /></a>
+				</div>
+				<div class="text">
+					<h4><a href="portfolio_detail.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/portfolio_detail.html">Lorem Ipsum</a></h4>
+						<p>Nam egestas tincidunt sem, nec porta nibh scelerisque a. In accumsan semper tincidunt.</p>
+				</div>
+				
+				<div class="clear"></div>
+				
+				<p><a class="work_btn_one margin_right" href="portfolio_detail.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/portfolio_detail.html">View Details</a> <a class="work_btn_two" href="#">Live Preview</a></p>
+				
+				<div class="clear"></div>
+			</div>
+		</li><!-- Portfolio Item END -->
+			
+		<!-- Portfolio Item Start -->
+		<li class="Portfolio XHTML All">
+			<div class="grid_4 portfolio-item rounded">
+				<div class="image">
+					<a href="images/portfolio/big/portfolio-work1.jpg" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/images/portfolio/big/portfolio-work1.jpg" title="Webworker 2.0 Photoshop" rel="prettyPhoto"><img class="pthumb" src="images/portfolio/thumbs/thumb-html.jpg" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/images/portfolio/thumbs/thumb-html.jpg" alt="Portfolio Item" /></a>
+				</div>
+				<div class="text">
+					<h4><a href="portfolio_detail.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/portfolio_detail.html">Lorem Ipsum</a></h4>
+						<p>Nam egestas tincidunt sem, nec porta nibh scelerisque a. In accumsan semper tincidunt.</p>
+				</div>
+				
+				<div class="clear"></div>
+				
+				<p><a class="work_btn_one margin_right" href="portfolio_detail.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/portfolio_detail.html">View Details</a> <a class="work_btn_two" href="#">Live Preview</a></p>
+				
+				<div class="clear"></div>
+			</div>
+		</li><!-- Portfolio Item END -->
+		
+		<!-- Portfolio Item Start -->
+		<li class="Portfolio Video All">
+			<div class="grid_4 portfolio-item rounded">
+				<div class="image">
+					<a href="javascript:if(confirm('http://trailers.apple.com/movies/universal/despicableme/despicableme-tlr1_r640s.mov?width=640&height=360  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://trailers.apple.com/movies/universal/despicableme/despicableme-tlr1_r640s.mov?width=640&height=360'" tppabs="http://trailers.apple.com/movies/universal/despicableme/despicableme-tlr1_r640s.mov?width=640&height=360" title="Quick Time Video" rel="prettyPhoto[movies]"><img class="pthumb" src="images/portfolio/thumbs/thumb-mov.jpg" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/images/portfolio/thumbs/thumb-mov.jpg" alt="Quick Time Video" /></a>
+				</div>
+				<div class="text">
+					<h4><a href="portfolio_detail.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/portfolio_detail.html">Lorem Ipsum</a></h4>
+						<p>Nam egestas tincidunt sem, nec porta nibh scelerisque a. In accumsan semper tincidunt.</p>
+				</div>
+				
+				<div class="clear"></div>
+				
+				<p><a class="work_btn_one margin_right" href="portfolio_detail.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/portfolio_detail.html">View Details</a> <a class="work_btn_two" href="#">Live Preview</a></p>
+				
+				<div class="clear"></div>
+			</div>
+		</li><!-- Portfolio Item END -->					
+		
+	</ul><!-- Portfolio Items List END -->
+				
+				
+			</div><!-- Content END -->
+						
+			<hr class="grid_12"></hr>
+	
+	</div><!-- Main Content END -->
+	
+	<div class="clear"></div>
+	
+	<div id="fullwidth_footer_border"></div><!-- Footer Border -->	
+	
+	<!-- Start Footer Top -->
+	<div id="fullwidth_footer_top">
+		
+		<!-- Start Footer Top Container -->
+		<div class="container_12">
+			
+			<!-- Start Footer Widget About -->
+			<div class="grid_4 footer_widget_about">
+			
+				<h4>About Cocomonio</h4>
+				
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labolore magna aliqua.</p>
+				
+				<p>Follow us on the world wide web.</p>
+				
+				<ul class="social_bookmarks_footer">
+					<li class="deviantart"><a href="#" class="" title="DeviantArt">DeviantArt</a></li>
+					<li class="flickr"><a href="#" class="" title="Flickr">Flickr</a></li>
+					<li class="vimeo"><a href="#" class="" title="Vimeo">Vimeo</a></li>
+					<li class="delicious"><a href="#" class="" title="Delicious">Delicious</a></li>
+					<li class="linkedin"><a href="#" class="" title="LinkedIn">LinkedIn</a></li>
+					<li class="twitter"><a href="#" class="" title="Twitter">Twitter</a></li>
+					<li class="facebook"><a href="#" class="" title="Facebook">Facebook</a></li>
+					<li class="rss"><a href="#" class="" title="RSS">RSS Feed</a></li>
+				</ul>
+			
+			</div><!-- Footer Widget About END -->
+		
+			<!-- Start Footer Widget -->
+			<div class="grid_2 footer_widget">
+		
+			<h4>Pages</h4>
+			
+				<ul class="footer_widget_list">
+					<li><a href="#" class="" title="">About</a></li>
+					<li><a href="#" class="" title="">Service</a></li>
+					<li><a href="#" class="" title="">Portfolio</a></li>
+					<li><a href="#" class="" title="">FAQ</a></li>
+					<li><a href="#" class="" title="">Blog</a></li>
+					<li><a href="#" class="" title="">Contact</a></li>
+				</ul>
+			
+			</div><!-- Footer Widget END -->
+		
+			<!-- Start Footer Widget -->
+			<div class="grid_2 footer_widget">
+		
+			<h4>Categories</h4>
+			
+				<ul class="footer_widget_list">
+					<li><a href="#" class="" title="">Apple</a></li>
+					<li><a href="#" class="" title="">CSS3</a></li>
+					<li><a href="#" class="" title="">Development</a></li>
+					<li><a href="#" class="" title="">HTML</a></li>
+					<li><a href="#" class="" title="">JavaScript</a></li>
+					<li><a href="#" class="" title="">Off Topic</a></li>
+					<li><a href="#" class="" title="">SEO</a></li>
+					<li><a href="#" class="" title="">Social Media</a></li>
+					<li><a href="#" class="" title="">Web Design</a></li>
+				</ul>
+			
+			</div><!-- Footer Widget END -->
+		
+			<!-- Start Footer Widget -->
+			<div class="grid_2 footer_widget">
+		
+			<h4>Blogroll</h4>
+			
+				<ul class="footer_widget_list">
+					<li><a href="#" class="" title="">Documentation</a></li>
+					<li><a href="#" class="" title="">Plugins</a></li>
+					<li><a href="#" class="" title="">Suggest Ideas</a></li>
+					<li><a href="#" class="" title="">Support Forum</a></li>
+					<li><a href="#" class="" title="">Themes</a></li>
+					<li><a href="#" class="" title="">WordPress Blog</a></li>
+					<li><a href="#" class="" title="">WordPress Planet</a></li>
+				</ul>
+			
+			</div><!-- Footer Widget END -->
+		
+			<!-- Start Footer Widget -->
+			<div class="grid_2 footer_widget">
+		
+			<h4>Meta</h4>
+			
+				<ul class="footer_widget_list">
+					<li><a href="#" class="" title="">Log In</a></li>
+					<li><a href="#" class="" title="">Entries RSS</a></li>
+					<li><a href="#" class="" title="">Comments RSS</a></li>
+					<li><a href="#" class="" title="">WordPress.org</a></li>
+				</ul>
+			
+			</div><!-- Footer Widget END -->
+		
+		</div><!-- Footer Top Container END -->
+	
+	</div><!-- Footer Top END-->
+	
+	<!-- Start Footer Bottom -->
+	<div id="fullwidth_footer_bottom">
+	
+		<!-- Start Footer Bottom Container -->
+		<div class="container_12">
+        	
+        	<!-- Start Copyright -->
+			<div class="grid_8 copyright">
+                    
+				<p class="rights">Copyright 2010 by <a href="index.html" tppabs="http://www.wickedshot.de/demos/cocomonio/orange/index.html" title="cocomonio">cocomonio</a>. All rights reserved.</p>
+            
+			</div><!-- Copyright END -->
+
+			<!-- Start Footer Text -->
+			<div class="grid_4 footer_text">
+            
+				<a href="javascript:if(confirm('http://themeforest.net/user/Wickedshot  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://themeforest.net/user/Wickedshot'" tppabs="http://themeforest.net/user/Wickedshot">Buy this Template at Themeforest.net</a>
+                
+			</div><!-- Footer Text END -->
+            
+                        
+		</div><!-- Footer Bottom Container END -->
+    
+    <!-- Clearfix -->    
+	<div class="clear"></div>
+	
+	</div><!-- Footer Bottom END -->
+		
+<!-- IE fix -->
+<script type="text/javascript"> Cufon.now(); </script>	
+
+</body>
+</html>
